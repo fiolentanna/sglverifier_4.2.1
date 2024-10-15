@@ -4389,33 +4389,43 @@
 			"id": "2cd6b4b3-6a88-44fb-a7a5-646f6f21670c"
 		}
 	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{id_token}}",
+				"type": "string"
+			}
+		]
+	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
+				"id": "29242a5f-0722-495a-ad43-8b9313149099",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
 					""
-				],
-				"id": "09241eb5-60b9-411f-a2e2-b7e53b3060e0"
+				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
+				"id": "89184294-434f-442d-957c-e8f330b9f878",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
 					""
-				],
-				"id": "76c8ddb0-6822-4250-a730-0007b5e57174"
+				]
 			}
 		}
 	],
 	"variable": [
 		{
-			"id": "c276a285-9175-433a-8447-7ae3fa935213",
+			"id": "ea594e51-82a4-403b-b80a-7ffa125b9f62",
 			"key": "baseURL",
 			"value": "http://localhost:8080/api/"
 		}
